@@ -1,5 +1,7 @@
 // onclick search-icon
-
+const sum2Numbers = (a, b) => {
+    return a + b;
+}
 document.querySelector('#search-icon').onclick = () =>{
     document.querySelector('.search-box').classList.toggle('active');
     document.querySelector('.login-form-container').classList.remove('active');
