@@ -1,8 +1,10 @@
 // onclick search-icon
-
 console.log('haha')
 function multiply(x, y) {
     return x * y
+}
+const sum2Numbers = (a, b) => {
+    return a + b;
 }
 document.querySelector('#search-icon').onclick = () =>{
     document.querySelector('.search-box').classList.toggle('active');
