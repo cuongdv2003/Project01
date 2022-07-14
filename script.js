@@ -1,5 +1,9 @@
 // onclick search-icon
 
+console.log('haha')
+function multiply(x, y) {
+    return x * y
+}
 document.querySelector('#search-icon').onclick = () =>{
     document.querySelector('.search-box').classList.toggle('active');
     document.querySelector('.login-form-container').classList.remove('active');
