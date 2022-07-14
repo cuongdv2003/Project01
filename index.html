@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <header>
+        <div class="nav container">
+            <!-- menu icon -->
+            <i class='bx bx-menu' id="menu-icon"></i>
+            <!-- logo -->
+            <a href="#" class="logo">Cario<span>Motor</span></a>
+            <!-- nav list -->
+            <ul class="navbar">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cars">Cars</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#parts">Parts</a></li>
+                <li><a href="#blog">Our Blog</a></li>
+            </ul>
+
+            <div class="icon">
+                <!-- Search icon -->
+                <i class='bx bx-search' id="search-icon"></i>
+                <!-- Login icon -->
+                <i class='bx bx-user' id="user-icon"></i>
+                <!-- cart icon -->
+                <i class='bx bx-cart' id="cart-icon"></i>
+            </div>
+
+            <!-- Search box -->
+            <div class="search-box container">
+                <input type="search" placeholder="Search here...">
+            </div>
+        </div>
+    </header>
+
+    <!-- Login-form -->
+    <div class="login-form-container">
+        
+        <span class="bx bx-x" id="close-login-form"></span>
+        <form action="">
+            <h2>Login Form</h2>
+            <input type="text" placeholder="Username" class="boxes">
+            <input type="password" placeholder="Password" class="boxes">
+            <a href=""><p>Forgot password?</p></a>
+            <input type="submit" value="Sign In" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="" class="btn"><span><i class='bx bxl-google'></i></span>google</a>
+                <a href="" class="btn"><span><i class='bx bxl-facebook-circle' ></span></i>facebook</a>
+            </div>
+        <p>don't have an account <a href="">create one</a></p>
+    </form>
+    </div>
+
+    <!-- cart-form -->
+    <div class="cart-form-container">
+        <span class="bx bx-x" id="close-cart-form"></span>
+        <form action="">
+            <h3>Cart items</h3>
+            <p>You have no items in your shopping cart.<p>
+            <div class="img-item">
+                <img src="car1.png" alt="">
+                <a href=""></a>
+            </div>
+            <div class="img-detail">
+                <div class="img-detail-text">
+                    <span>
+                        <div class="series-number">123</div>
+                        <a href="" class="namecar">lamborghini</a>
+                        <!-- <div class="price-car">$1000</div> -->
+                        <div class="price-car"><input type="text"></div>
+                    <div class="buttons">
+                        <div class="change-number">
+                            <button class="left-button">-</button>
+                            <input type="text" value="1" id="total">
+                            <button class="right-button">+</button>
+                        </div>
+                        <div class="delete-icon">
+                            <i class='bx bx-trash'></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <!-- home section -->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>We Have Everything <br> Your <span>Car</span> Need</h1>
+            <p>Lorem ipsum dolor sit amet consectetur <br> adipisicing elit. Nulla, corporn</p>
+            <!-- Home button -->
+            <a href="#" class="btn">Discover Now</a>
+        </div>
+    </section>
+
+    <!-- Cars section -->
+    
+    <section class="cars" id="cars">
+        <div class="heading">
+            <span>All Cars</span>
+            <h2>We have all cars</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, aperiam!</p>
+        </div>
+        <!-- car Container -->
+        <div class="cars-container container">
+            <!-- Box 1 -->
+            <div class="box">
+                <img src="car1.png" alt="">
+                <h2>Name car</h2>
+                <!-- <p>Price</p> -->
+            </div>
+            <!-- Box 2 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h2>Name car</h2>
+                <!-- <p>Price</p> -->
+            </div>
+            <!-- Box 3 -->
+            <div class="box">
+                <img src="car3.png" alt="">
+                <h2>Name car</h2>
+                <!-- <p>Price</p> -->
+            </div>
+            <!-- Box 4 -->
+            <div class="box">
+                <img src="car4.png" alt="">
+                <h2>Name car</h2>
+                <!-- <p>Price</p> -->
+            </div>
+            <!-- Box 5 -->
+            <div class="box">
+                <img src="car5.png" alt="">
+                <h2>Name car</h2>
+                <!-- <p>Price</p> -->
+            </div>
+            <!-- Box 6 -->
+            <div class="box">
+                <img src="car6.png" alt="">
+                <h2>Name car</h2>
+                <!-- <p>Price</p> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section class="about container" id="about">
+        <div class="about-img">
+            <img src="car4.png" alt="">
+        </div>
+        <div class="about-text">
+            <span>About us</span>
+            <h2>Cheap price with <br>Quality Cars</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, corporn..............</p>
+            <!-- about button -->
+            <a href="#" class="btn">Learn more</a>
+        </div>
+
+        <!-- Parts-container -->
+        <div class="parts-container container" id="parts">
+            <!-- parts 1 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h3>Name car</h3>
+                <span>$120.99</span>
+                <i class="bx bxs-star">(6 reviews)</i>
+                <a href="" class="btn">Buy Now</a>
+                <a href="" class="details">Detail</a>
+            </div>
+            <!-- parts 1 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h3>Name car</h3>
+                <span>$120.99</span>
+                <i class="bx bxs-star">(6 reviews)</i>
+                <a href="" class="btn">Buy Now</a>
+                <a href="" class="details">Detail</a>
+            </div>
+            <!-- parts 1 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h3>Name car</h3>
+                <span>$120.99</span>
+                <i class="bx bxs-star">(6 reviews)</i>
+                <a href="" class="btn">Buy Now</a>
+                <a href="" class="details">Detail</a>
+            </div>
+            <!-- parts 1 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h3>Name car</h3>
+                <span>$120.99</span>
+                <i class="bx bxs-star">(6 reviews)</i>
+                <a href="" class="btn">Buy Now</a>
+                <a href="" class="details">Detail</a>
+            </div>
+            <!-- parts 1 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h3>Name car</h3>
+                <span>$120.99</span>
+                <i class="bx bxs-star">(6 reviews)</i>
+                <a href="" class="btn">Buy Now</a>
+                <a href="" class="details">Detail</a>
+            </div>
+            <!-- parts 1 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h3>Name car</h3>
+                <span>$120.99</span>
+                <i class="bx bxs-star">(6 reviews)</i>
+                <a href="" class="btn">Buy Now</a>
+                <a href="" class="details">Detail</a>
+            </div>
+            <!-- parts 1 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h3>Name car</h3>
+                <span>$120.99</span>
+                <i class="bx bxs-star">(6 reviews)</i>
+                <a href="" class="btn">Buy Now</a>
+                <a href="" class="details">Detail</a>
+            </div>
+            <!-- parts 1 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h3>Name car</h3>
+                <span>$120.99</span>
+                <i class="bx bxs-star">(6 reviews)</i>
+                <a href="" class="btn">Buy Now</a>
+                <a href="" class="details">Detail</a>
+            </div>
+            <!-- parts 1 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h3>Name car</h3>
+                <span>$120.99</span>
+                <i class="bx bxs-star">(6 reviews)</i>
+                <a href="" class="btn">Buy Now</a>
+                <a href="" class="details">Detail</a>
+            </div>
+            <!-- parts 1 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h3>Name car</h3>
+                <span>$120.99</span>
+                <i class="bx bxs-star">(6 reviews)</i>
+                <a href="" class="btn">Buy Now</a>
+                <a href="" class="details">Detail</a>
+            </div>
+            <!-- parts 1 -->
+            <div class="box">
+                <img src="car2.png" alt="">
+                <h3>Name car</h3>
+                <span>$120.99</span>
+                <i class="bx bxs-star">(6 reviews)</i>
+                <a href="" class="btn">Buy Now</a>
+                <a href="" class="details">Detail</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer section -->
+    <section class="footer">
+        <div class="footer-container container">
+            <div class="footer-box">
+                <a href="#" class="logo">Cario <span>Motor</span></a>
+                <div class="social">
+                    <a href=""><i class='bx bxl-facebook'></i></a>
+                    <a href=""><i class='bx bxl-twitter'></i></a>
+                    <a href=""><i class='bx bxl-instagram'></i></a>
+                    <a href=""><i class='bx bxl-youtube'></i></a>
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Page</h3>
+                <a href="#">Home</a>
+                <a href="#">Cars</a>
+                <a href="#">Parts</a>
+                <a href="#">Sales</a>
+            </div>
+            <div class="footer-box">
+                <h3>Legal</h3>
+                <a href="#">Privacy</a>
+                <a href="#">Refund Policy</a>
+                <a href="#">Cookie Policy</a>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>United States</p>
+                <p>Japan</p>
+                <p>Germany</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- icon - chat -->
+    <div class="chat-icon">
+        <i class='bx bx-message' ></i>
+    </div>
+    <!-- copyright -->
+    <div class="copyright">
+        <p>C2109L MotorCario</p>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
